@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+li {
+    list-style: none;
+}
+.lighter {
+    font-weight: lighter;
+}
+.top-bar {
+    background:#0a0a0a;
+    border-bottom: 10px solid white;
+    height: 65vh;
+}
+.links {
+    letter-spacing: 0.2em;
+    font-size: 2.5em;
+    display: flex;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 25vh;
+    text-transform: uppercase;
+}
+.links li {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+.links a::after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 5px;
+    background: white;
+    transition: width .3s ease-in;
+}
+.links a:hover::after {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transition: width .3s ease-out;
+}
+.hero-photo {
+    position: absolute;
+    top: calc(65% - 150px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.bottom-bar {
+    background: lightgrey;
+    padding-bottom: 7.5vh;
+}
+section.bottom-bar .container:first-child {
+    padding-top: 30vh;
+}
+.container {
+    padding-top: 15vh;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+.row {
+    width: 42vw;
+    background: #fefefe;
+    letter-spacing: 0.09em;
+}
+.row:nth-child(1) {
+    margin-right: 6vw;
+}
+.row li{
+    padding: 1vh 2vw;
+    font-size: 2em;
+}
+.header {
+    background: #fefefe;
+    width: 85vw;
+    padding: 2vh 4vw;
+    font-size: 2.5em;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fefefe;
+    width: 85vw;
+}
+.photo {
+    margin: 4vh auto;
+    border: 4px solid #0a0a00;
+    width: 32vw;
+    height: 32vh;
+
+}
+.placeholder {
+    font-size: 32px;
+    text-align: center;
+    margin-top: calc(16vh - 16px);
+}
+.contact-bar {
+    background: #0a0a0a;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+}
+.contact-container {
+    padding-top: 7.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+    color: white;
+    background: #0a0a0a;
+}
+.contact-header {
+    background: #0a0a0a;
+    padding: 2vh 4vw;
+    font-size: 2.5em;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+.contact-icons {
+    padding-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding-bottom: 15vh;
+}
+.contact-icons li {
+    width: 100%;
+}
+.footer {
+    background: lightgrey;
+    color: black;
+    padding: 2vh 2vw;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+/* RWD */
+/* There is no rwd yet... */
